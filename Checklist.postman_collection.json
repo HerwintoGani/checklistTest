@@ -1,0 +1,398 @@
+{
+	"info": {
+		"_postman_id": "7ab44198-7474-42c9-a41a-bba9e46874dc",
+		"name": "Checklist",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"trial2\",\r\n    \"password\": \"trial2\",\r\n    \"email\": \"trial2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"trial\",\r\n    \"password\":\"trial\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/checklist",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRyaWFsIiwiaWF0IjoxNzM0Njg0OTM1LCJleHAiOjE3MzQ2ODg1MzV9.iwAegQayVIX9zZi3YxnzW744yXQIB4cX920XIfcVbXk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/checklist",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"checklist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/checklist",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRyaWFsIiwiaWF0IjoxNzM0Njg0OTM1LCJleHAiOjE3MzQ2ODg1MzV9.iwAegQayVIX9zZi3YxnzW744yXQIB4cX920XIfcVbXk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"dearder\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/checklist",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"checklist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/checklist/:id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRyaWFsIiwiaWF0IjoxNzM0Njg0OTM1LCJleHAiOjE3MzQ2ODg1MzV9.iwAegQayVIX9zZi3YxnzW744yXQIB4cX920XIfcVbXk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/checklist/6",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"checklist",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/checklist/:id/item",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRyaWFsIiwiaWF0IjoxNzM0Njg0OTM1LCJleHAiOjE3MzQ2ODg1MzV9.iwAegQayVIX9zZi3YxnzW744yXQIB4cX920XIfcVbXk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/checklist/1/item",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"checklist",
+						"1",
+						"item"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/checklist/:id/item",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRyaWFsIiwiaWF0IjoxNzM0Njg0OTM1LCJleHAiOjE3MzQ2ODg1MzV9.iwAegQayVIX9zZi3YxnzW744yXQIB4cX920XIfcVbXk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"itemName\":\"dearder\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/checklist/1/item",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"checklist",
+						"1",
+						"item"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/checklist/:id/item/:d_id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRyaWFsIiwiaWF0IjoxNzM0Njg0OTM1LCJleHAiOjE3MzQ2ODg1MzV9.iwAegQayVIX9zZi3YxnzW744yXQIB4cX920XIfcVbXk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/checklist/1/item/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"checklist",
+						"1",
+						"item",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/checklist/:id/item/:d_id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRyaWFsIiwiaWF0IjoxNzM0Njg0OTM1LCJleHAiOjE3MzQ2ODg1MzV9.iwAegQayVIX9zZi3YxnzW744yXQIB4cX920XIfcVbXk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/checklist/1/item/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"checklist",
+						"1",
+						"item",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/checklist/:id/item/:d_id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRyaWFsIiwiaWF0IjoxNzM0Njg0OTM1LCJleHAiOjE3MzQ2ODg1MzV9.iwAegQayVIX9zZi3YxnzW744yXQIB4cX920XIfcVbXk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/checklist/1/item/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"checklist",
+						"1",
+						"item",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/checklist/:id/item/rename/:d_id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRyaWFsIiwiaWF0IjoxNzM0Njg0OTM1LCJleHAiOjE3MzQ2ODg1MzV9.iwAegQayVIX9zZi3YxnzW744yXQIB4cX920XIfcVbXk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"itemName\":\"bearere\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/checklist/1/item/rename/4",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"checklist",
+						"1",
+						"item",
+						"rename",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
